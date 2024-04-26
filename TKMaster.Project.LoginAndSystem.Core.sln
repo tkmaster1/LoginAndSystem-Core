@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{202AE209-4090-44A6-93F2-7CC463E44A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{716A21B1-6B5D-462A-B8C2-69678D09CB03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{4A7641FE-4413-4B80-831E-102095A85B4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{CB1B3742-2765-43CC-85D9-9B17B821CF8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{0C62E430-C9D4-485B-A36E-F1F248286675}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.Project.LoginAndSystem.Core.Domain", "src\TKMaster.Project.LoginAndSystem.Core.Domain\TKMaster.Project.LoginAndSystem.Core.Domain.csproj", "{8F76BB4E-C781-468A-8828-25FE8AAE8615}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.Project.LoginAndSystem.Core.Data", "src\TKMaster.Project.LoginAndSystem.Core.Data\TKMaster.Project.LoginAndSystem.Core.Data.csproj", "{30295367-A067-4A3A-B266-F9005916241E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.Project.LoginAndSystem.Core.WebApi", "src\TKMaster.Project.LoginAndSystem.Core.WebApi\TKMaster.Project.LoginAndSystem.Core.WebApi.csproj", "{273AC77B-E620-4068-8131-3B56DDF5E3AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.Project.LoginAndSystem.Core.Service", "src\TKMaster.Project.LoginAndSystem.Core.Service\TKMaster.Project.LoginAndSystem.Core.Service.csproj", "{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - DataBases", "3.2 - DataBases", "{697F3EB9-7D3C-499C-9171-68F914587650}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBIdentitySystem", "src\Sql\DBIdentitySystem\DBIdentitySystem.sqlproj", "{CEABEE20-3A5B-42D0-BCBB-9487E8789759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C62E430-C9D4-485B-A36E-F1F248286675} = {CB1B3742-2765-43CC-85D9-9B17B821CF8A}
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615} = {4A7641FE-4413-4B80-831E-102095A85B4D}
+		{30295367-A067-4A3A-B266-F9005916241E} = {0C62E430-C9D4-485B-A36E-F1F248286675}
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA} = {202AE209-4090-44A6-93F2-7CC463E44A3F}
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87} = {716A21B1-6B5D-462A-B8C2-69678D09CB03}
+		{697F3EB9-7D3C-499C-9171-68F914587650} = {CB1B3742-2765-43CC-85D9-9B17B821CF8A}
+		{CEABEE20-3A5B-42D0-BCBB-9487E8789759} = {697F3EB9-7D3C-499C-9171-68F914587650}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F97DCD55-9EDA-4C62-93A2-A47AF946F29F}
+	EndGlobalSection
+EndGlobal

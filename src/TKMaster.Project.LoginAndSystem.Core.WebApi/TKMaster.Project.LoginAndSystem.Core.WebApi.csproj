@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configurations\LoggerFactoryConfig.cs" />
+    <Compile Remove="Controllers\AlunoController.cs" />
+    <Compile Remove="Controllers\CursoController.cs" />
+    <Compile Remove="Controllers\FornecedorController.cs" />
+    <Compile Remove="Controllers\ImagemUsuarioController.cs" />
+    <Compile Remove="Controllers\MensalidadeController.cs" />
+    <Compile Remove="Controllers\PresencaController.cs" />
+    <Compile Remove="Controllers\SexoController.cs" />
+    <Compile Remove="Controllers\TurmaController.cs" />
+    <Compile Remove="Mapper\FornecedorEntityToViewModel.cs" />
+    <Compile Remove="ViewModels\DTOs\FornecedorDTO.cs" />
+    <Compile Remove="ViewModels\DTOs\MatriculaDTO.cs" />
+    <Compile Remove="ViewModels\Request\RequestFornecedor.cs" />
+    <Compile Remove="ViewModels\Request\RequestReativarExcluirFornecedor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Npgsql" Version="6.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Log\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="ViewModels\DTOs\" />
+    <Folder Include="ViewModels\Request\" />
+    <Folder Include="ViewModels\Responses\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TKMaster.Project.LoginAndSystem.Core.Data\TKMaster.Project.LoginAndSystem.Core.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TKMaster.Project.Common.Application">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Application\bin\Debug\net8.0\TKMaster.Project.Common.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Domain">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Logger">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Util">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

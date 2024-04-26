@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\FornecedorAppService.cs" />
+    <Compile Remove="DTOs\MenuSistemaDTO.cs" />
+    <Compile Remove="DTOs\PaginationDTO.cs" />
+    <Compile Remove="DTOs\UsuarioIdentity\ClaimsUsuarioIdentityDTO.cs" />
+    <Compile Remove="DTOs\UsuarioIdentity\UsuarioIdentityDTO.cs" />
+    <Compile Remove="DTOs\UsuarioIdentity\UsuarioIdentityFilterDTO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TKMaster.Project.Common.Application">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Application\bin\Debug\net8.0\TKMaster.Project.Common.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Domain">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Util">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Filters\" />
+    <Folder Include="DTOs\Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TKMaster.Project.LoginAndSystem.Core.Domain\TKMaster.Project.LoginAndSystem.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

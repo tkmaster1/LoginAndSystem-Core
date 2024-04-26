@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\ClaimsUsuarioIdentity.cs" />
+    <Compile Remove="Entities\Fornecedor.cs" />
+    <Compile Remove="Entities\Matricula.cs" />
+    <Compile Remove="Filter\UsuarioIdentityFilter.cs" />
+    <Compile Remove="Interfaces\Repositories\IFornecedorRepository.cs" />
+    <Compile Remove="Interfaces\Repositories\IMatriculaRepository.cs" />
+    <Compile Remove="Interfaces\Services\IFornecedorAppService.cs" />
+    <Compile Remove="Models\Pagination.cs" />
+    <Compile Remove="Models\UsuarioIdentity\UsuarioIdentityMudancaSenhaModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="8.0.1" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Filter\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TKMaster.Project.Common.Application">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Application\bin\Debug\net8.0\TKMaster.Project.Common.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Domain">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="TKMaster.Project.Common.Util">
+      <HintPath>..\..\..\..\..\..\..\..\..\Projetos\Azure\Projetcts-Common\src\TKMaster.Project.Common.Util\bin\Debug\net8.0\TKMaster.Project.Common.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
